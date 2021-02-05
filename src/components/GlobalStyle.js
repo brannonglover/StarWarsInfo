@@ -27,6 +27,10 @@ export const GlobalStyle = createGlobalStyle`
       color: #fff;
       border-color: #fff;
     }
+    &:disabled {
+      opacity: .2;
+      cursor: not-allowed;
+    }
   }
 `;
 
