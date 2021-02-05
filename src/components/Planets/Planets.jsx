@@ -1,17 +1,19 @@
 import React, { useState } from 'react'
-import { useQuery } from "react-query";
+import { usePaginatedQuery } from "react-query";
 import useGetPlanets from "../../hooks/useGetPlanets";
 import Planet from '../Planet/Planet';
+import Pagination from '../Pagination';
 
 const Planets = () => {
   const [page, setPage] = useState(1);
-  const { data, status } = useQuery(["planets", page], useGetPlanets);
+  const { resolvedData, latestData, status } = usePaginatedQuery(["planets", page], useGetPlanets);
+
+  console.log(resolvedData, latestData);
 
   return (
     <>
       <h2>Planets</h2>
-      <button onClick={() => setPage(1)}>Page 1</button>
-      <button onClick={() => setPage(2)}>Page 2</button>
+      <Pagination page={page} setPage={setPage} latestData={latestData} />
       {status === "error" && (
         <div>There was an error retreiving the data</div>
       )}
@@ -20,7 +22,7 @@ const Planets = () => {
       )}
       {status === "success" && (
         <>
-          {data.results.map(planet => {
+          {resolvedData.results.map(planet => {
             return <Planet key={planet.name} planet={planet} />
           })}
         </>
