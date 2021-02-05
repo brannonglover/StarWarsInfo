@@ -3,6 +3,7 @@ import { usePaginatedQuery } from "react-query";
 import useGetPlanets from "../../hooks/useGetPlanets";
 import Planet from '../Planet/Planet';
 import Pagination from '../Pagination';
+import strings from '../../strings';
 
 const Planets = () => {
   const [page, setPage] = useState(1);
@@ -12,10 +13,10 @@ const Planets = () => {
 
   return (
     <>
-      <h2>Planets</h2>
+      <h2>{strings.PLANETS}</h2>
       <Pagination page={page} setPage={setPage} latestData={latestData} />
       {status === "error" && (
-        <div>There was an error retreiving the data</div>
+        <div>{strings.ERROR}</div>
       )}
       {status === "loading" && (
         <div>Loading...</div>
