@@ -1,11 +1,11 @@
 import React from 'react';
-import { NavBarButtonStyle, NavBarStyle } from './NavBar.styled';
+import { NavBarStyle } from './NavBar.styled';
 
 const NavBar = ({ setPage }) => {
   return (
     <NavBarStyle>
-      <NavBarButtonStyle onClick={() => setPage("planets")}>Planets</NavBarButtonStyle>
-      <NavBarButtonStyle onClick={() => setPage("people")}>People</NavBarButtonStyle>
+      <button onClick={() => setPage("planets")}>Planets</button>
+      <button onClick={() => setPage("people")}>People</button>
     </NavBarStyle>
   )
 }

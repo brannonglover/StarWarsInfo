@@ -5,10 +5,9 @@ import Person from '../Person/Person';
 
 const People = () => {
   const { data, status } = useQuery("people", useGetPeople);
-  console.log(data);
 
   return (
-    <div>
+    <>
       <h2>People</h2>
       {status === "error" && (
         <div>There was an error retreiving the data</div>
@@ -23,7 +22,7 @@ const People = () => {
           })}
         </>
       )}
-    </div>
+    </>
   )
 }
 

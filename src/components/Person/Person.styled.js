@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 
 export const PersonStyle = styled.div`
-  padding: 8px 16px;
+  padding: .5em 1em;
   background: #1b1b1b;
-  margin: 16px 0;
-  border-radius: 20px;
+  margin: 1em 0;
+  border-radius: 1.2em;
 `;
 
 export const PersonStyleP = styled.p`
-  margin: 6px 0;
+  margin: .5em 0;
   color: #999;
 `;
 
 export const PersonStyleH3 = styled.h3`
-  margin: 10px 0;
+  margin: .7em 0;
   color: #ffff57;
 `;

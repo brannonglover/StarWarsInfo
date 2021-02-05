@@ -8,7 +8,7 @@ const Planets = () => {
   const { data, status } = useQuery(["planets", page], useGetPlanets);
 
   return (
-    <div>
+    <>
       <h2>Planets</h2>
       <button onClick={() => setPage(1)}>Page 1</button>
       <button onClick={() => setPage(2)}>Page 2</button>
@@ -25,7 +25,7 @@ const Planets = () => {
           })}
         </>
       )}
-    </div>
+    </>
   )
 }
 
