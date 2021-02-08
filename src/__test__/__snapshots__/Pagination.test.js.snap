@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display buttons for pagination 1`] = `
+<DocumentFragment>
+  <button
+    disabled=""
+  >
+    Previous
+  </button>
+  <span>
+    1
+  </span>
+  <button
+    disabled=""
+  >
+    Next
+  </button>
+</DocumentFragment>
+`;

@@ -9,8 +9,6 @@ const Planets = () => {
   const [page, setPage] = useState(1);
   const { resolvedData, latestData, status } = usePaginatedQuery(["planets", page], useGetPlanets);
 
-  console.log(resolvedData, latestData);
-
   return (
     <>
       <h2>{strings.PLANETS}</h2>

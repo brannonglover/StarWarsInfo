@@ -9,11 +9,9 @@ const People = () => {
   const [page, setPage] = useState(1);
   const { resolvedData, latestData, status } = usePaginatedQuery(["people", page], useGetPeople);
 
-  console.log(resolvedData);
-
   return (
     <>
-      <h2>People</h2>
+      <h2>{strings.PEOPLE}</h2>
       <Pagination page={page} setPage={setPage} latestData={latestData} />
       {status === "error" && (
         <div>{strings.ERROR}</div>

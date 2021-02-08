@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display navbar component 1`] = `
+<DocumentFragment>
+  <nav
+    class="sc-bdfBwQ jkLVzr"
+  >
+    <button>
+      Planets
+    </button>
+    <button>
+      People
+    </button>
+  </nav>
+</DocumentFragment>
+`;

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display Planet component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdfBwQ hkBXND"
+  >
+    <h3
+      class="sc-dlfnbm cwBEuk"
+    >
+      Some Planet
+    </h3>
+    <p
+      class="sc-gsTCUz ggAsXq"
+    >
+      Population - 1000
+    </p>
+    <p
+      class="sc-gsTCUz ggAsXq"
+    >
+      Terrain - rough
+    </p>
+  </div>
+</DocumentFragment>
+`;

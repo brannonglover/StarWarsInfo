@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display Person component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdfBwQ jrrTlY"
+  >
+    <h3
+      class="sc-dlfnbm hvVpLe"
+    >
+      Luke Skywalker
+    </h3>
+    <p
+      class="sc-gsTCUz bNrjYQ"
+    >
+      Gender - male
+    </p>
+    <p
+      class="sc-gsTCUz bNrjYQ"
+    >
+      Birth Year - 052689
+    </p>
+  </div>
+</DocumentFragment>
+`;
