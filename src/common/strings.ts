@@ -1,4 +1,8 @@
-const strings = {
+interface IStrings {
+  [key: string]: any;
+}
+
+const strings: IStrings = {
   PLANETS: "Planets",
   PEOPLE: "People",
   POPULATION: "Population",
