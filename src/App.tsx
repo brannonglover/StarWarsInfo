@@ -4,9 +4,8 @@ import Planets from "./components/Planets/Planets";
 import People from "./components/People/People";
 import { GlobalStyle, Content, MainContent } from "./components/GlobalStyle";
 import { ReactQueryDevtools } from "react-query-devtools";
-import { AppState } from "./common/types";
 
-const App: React.FC<AppState> = () => {
+function App() {
   const [page, setPage] = useState("planets");
 
   return (
@@ -20,6 +19,6 @@ const App: React.FC<AppState> = () => {
       <ReactQueryDevtools />
     </>
   );
-};
+}
 
 export default App;

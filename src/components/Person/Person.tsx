@@ -1,9 +1,10 @@
 import React from "react";
 import { PersonStyle, PersonStyleH3, PersonStyleP } from "./Person.styled";
 import strings from "../../common/strings";
+import { IPerson } from "../../common/types";
 
 interface IPersonProps {
-  person: any;
+  person: IPerson;
 }
 
 const Person: React.FC<IPersonProps> = (props: IPersonProps) => {
